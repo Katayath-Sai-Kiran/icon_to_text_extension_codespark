@@ -15,13 +15,14 @@ Ideal for rich text, custom layouts, or displaying icons as text in Flutter apps
 
 ## 🚀 Features
 
-✅ Supports both Material and Cupertino icons
-✅ Converts IconData to `TextSpan` or `Text` widgets
-✅ Preserves original icon font family and package
-✅ Accepts optional `TextStyle` with easy overrides
-✅ Prefix and postfix text support — combine icon and surrounding text in one widget, reducing extra `TextSpan`s or `Text` widgets
-✅ Perfect for inline icons in rich text or complex UI
-✅ Minimal, zero-dependency extension
+- ✅ Supports both Material and Cupertino icons  
+- ✅ Converts IconData to `TextSpan` or `Text` widgets  
+- ✅ Preserves original icon font family and package  
+- ✅ Accepts optional `TextStyle` with easy overrides  
+- ✅ Prefix and postfix text support — combine icon and surrounding text in one widget, reducing extra `TextSpan`s or `Text` widgets  
+- ✅ Perfect for inline icons in rich text or complex UI  
+- ✅ Minimal, zero-dependency extension  
+
 
 ## 🔧 Installation
 
