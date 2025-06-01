@@ -22,15 +22,18 @@ dev_dependencies:
 # The following section is specific to Flutter packages.
 flutter:
 
+screenshots:
+  - path: assets/screenshots/300X650-03.png
+    description: Displays usage of IconData.toText with prefix and postfix styling.
+    width: 300
+
 assets:
   - assets/screenshots/
   - assets/banners/
 
 topics:
-
   - icondata
-  - cupertino-icons
+  - icons-to-text
   - material-icons
   - inline-icons
   - flutter-extensions
-
