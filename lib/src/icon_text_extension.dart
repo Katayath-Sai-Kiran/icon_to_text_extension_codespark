@@ -36,14 +36,13 @@ extension IconToTextExtension on IconData {
     // Add the icon character with correct font settings and optional size/color
     children.add(
       TextSpan(
-        
         semanticsLabel: iconSemanticsLabel,
         text: String.fromCharCode(codePoint),
         style: (style ?? const TextStyle()).copyWith(
           fontSize: iconSize,
           fontFamily: fontFamily,
           color: iconColor,
-          
+
           package: fontPackage,
         ),
       ),
