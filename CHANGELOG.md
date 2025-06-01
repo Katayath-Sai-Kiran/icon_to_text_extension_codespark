@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file.
 
+## [0.0.3] - 2025-06-01
+
+### Added
+- Support for `onTap` callback in `toTextSpan`, enabling interactive text behavior.
+- Allows tapping on the combined icon+text span for actions like navigation, popups, etc.
+- Internally wraps the span with a `TapGestureRecognizer` when `onTap` is provided.
+- Added IconTextLabel widget for a declarative and convenient way to render icons as styled text with prefix, postfix, and full layout/accessibility control
+
+
 ## [0.0.2] - 2025-06-01
 
 ### Added

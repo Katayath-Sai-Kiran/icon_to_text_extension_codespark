@@ -13,12 +13,12 @@ Ideal for rich text, custom layouts, or displaying icons as text in Flutter apps
 
 > ✨ Fully **null-safe**, simple, customizable, and accessible.
 
----
 
 ## 🚀 Features
 
 - ✅ Supports both Material and Cupertino icons  
 - ✅ Converts IconData to `TextSpan` or `Text` widgets  
+- ✅ Optional onTap callback for interactive text 
 - ✅ Preserves original icon font family and package  
 - ✅ Accepts optional `TextStyle` with easy overrides  
 - ✅ Prefix and postfix text support — combine icon and surrounding text in one widget  
@@ -27,9 +27,9 @@ Ideal for rich text, custom layouts, or displaying icons as text in Flutter apps
 - ✅ Optional `semanticsLabel` for screen readers (accessibility)  
 - ✅ Support for `TextAlign`, `TextDirection`, `maxLines`, and `TextOverflow` in `.toText()`  
 - ✅ `iconToString()` utility to get the raw character  
+- ✅ Utility widget IconTextLabel for declarative usage
 - ✅ Minimal, zero-dependency extension  
 
----
 
 ## 🔧 Installation
 
@@ -66,6 +66,39 @@ final widget = Icons.share.toText(
   textAlign: TextAlign.center,
 );
 ```
+
+Got it! Here's the **updated Roadmap** section replacing the **"Use in RichText"** example with a usage example of the new `IconTextLabel` widget:
+
+---
+
+## 💡 Roadmap
+
+* ✅ IconData to TextSpan conversion
+* ✅ IconData to Text widget conversion
+* ✅ Prefix and postfix support in text conversion
+* ✅ Custom font sizes & colors via `iconSize` and `iconColor`
+* ✅ Accessibility support with `semanticsLabel`
+* ✅ Layout controls: `TextAlign`, `TextDirection`, `maxLines`, `TextOverflow`
+* ✅ Utility widget `IconTextLabel` for declarative usage
+* 🔜 Utility methods for inline rich content
+* 🔜 Support for other custom font icons
+* 🔜 Dedicated preview playground for live testing
+
+
+### 🧱 Use with `IconTextLabel`
+
+```dart
+IconTextLabel(
+  icon: Icons.send,
+  prefix: 'Send ',
+  postfix: ' Now',
+  iconSize: 20,
+  textStyle: TextStyle(fontSize: 16),
+)
+```
+
+
+
 
 ### Use prefix and postfix to reduce extra spans/widgets
 
@@ -116,14 +149,12 @@ CupertinoIcons.share.toText(
 );
 ```
 
----
 
 ## 📷 Preview
 
 <img src="https://raw.githubusercontent.com/Katayath-Sai-Kiran/icon_to_text_extension_codespark/main/assets/screenshots/300X650-01.png" alt="Example" width="300"/>
 <img src="https://raw.githubusercontent.com/Katayath-Sai-Kiran/icon_to_text_extension_codespark/main/assets/screenshots/300X650-02.png" alt="Example" width="300"/>
 
----
 
 ## 💡 Roadmap
 
@@ -137,7 +168,6 @@ CupertinoIcons.share.toText(
 * [ ] Support for other custom font icons
 * [ ] Dedicated preview playground for live testing
 
----
 
 ## 📁 Example
 
@@ -147,17 +177,14 @@ Clone or open the `example/` folder and run:
 flutter run
 ```
 
----
 
 ## 🎉 Check Out My Other Packages!
 
 Explore more Flutter packages by [Katayath Sai Kiran](https://pub.dev/publishers/ksaikiran.tech/packages) to add unique UI effects and functionality to your apps.
 
----
 
 ## 👨‍💻 Maintainer
 
 Developed with 💙 by [Katayath Sai Kiran](https://github.com/Katayath-Sai-Kiran)
 📬 Contributions and suggestions are always welcome!
-```
 

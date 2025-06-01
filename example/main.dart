@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:icon_to_text_extension_codespark/icon_to_text_extension_codespark.dart';
 import 'package:icon_to_text_extension_codespark/src/icon_text_extension.dart';
 
 void main() {
@@ -46,6 +47,33 @@ class IconTextDemoPage extends StatelessWidget {
                 fontWeight: FontWeight.w600,
               ),
               textAlign: TextAlign.center,
+            ),
+            const SizedBox(height: 24),
+            IconTextLabel(
+              icon: Icons.send,
+              prefix: 'Send ',
+              postfix: ' Now',
+              onTap: () {
+                ScaffoldMessenger.of(
+                  context,
+                ).showSnackBar(SnackBar(content: Text("sdas")));
+              },
+              iconSize: 20,
+              textStyle: TextStyle(fontSize: 16),
+            ),
+            const SizedBox(height: 24),
+
+            CupertinoIcons.hand_point_right.toText(
+              prefix: 'Click ',
+              postfix: ' to proceed',
+              style: const TextStyle(fontSize: 24),
+              iconColor: Colors.blue,
+              iconSize: 24,
+              onTap: () {
+                ScaffoldMessenger.of(
+                  context,
+                ).showSnackBar(const SnackBar(content: Text('Icon tapped!')));
+              },
             ),
             const SizedBox(height: 24),
 
