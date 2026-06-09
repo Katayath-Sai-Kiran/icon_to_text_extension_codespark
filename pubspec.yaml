@@ -1,7 +1,9 @@
 name: icon_to_text_extension_codespark
-description: "Flutter extension to render any IconData (Material or Cupertino) as Text or TextSpan for inline icons in rich text and custom layouts."
-version: 0.0.3
+description: "Flutter extension to convert any IconData to inline Text or TextSpan. Material, Cupertino, and custom icon font support with rich text builder and full accessibility."
+version: 1.0.0
 homepage: "https://github.com/Katayath-Sai-Kiran/icon_to_text_extension_codespark"
+repository: "https://github.com/Katayath-Sai-Kiran/icon_to_text_extension_codespark"
+issue_tracker: "https://github.com/Katayath-Sai-Kiran/icon_to_text_extension_codespark/issues"
 
 environment:
   sdk: ^3.8.0
@@ -32,8 +34,8 @@ assets:
   - assets/banners/
 
 topics:
-  - icondata
-  - icons-to-text
+  - icons
+  - text
+  - rich-text
   - material-icons
-  - inline-icons
   - flutter-extensions
